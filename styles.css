@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+.highLight{
+  color: #e91e63;
+  display: inline-block;
+  margin: 0;
+	transform: translateY(-200%);
+	opacity: 0;
+	animation: slide-in-anim 0.7s ease-in-out forwards;
+}
+
+.highLightBottom{
+    color: #e91e63;
+    display: inline-block;
+    margin-top: 2rem;
+      transform: translateY(200%);
+      opacity: 0;
+      animation: slide-up-anim 0.7s ease-in-out forwards;
+}
+
+.socials{
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialLink{ 
+  margin-left: 10px;
+}
+
+.socialCV{
+  padding-left: 12px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway';
+  font-weight: 800;
+  padding: 10px 0px 0px 14px;
+}
+
+.workButton{
+  margin-top: 20px;
+  padding: 20px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.workButton:hover{
+  transition: 0.3s;
+  background-color: white;
+  color: #f6bd60;
+  cursor: pointer;
+}
+
+.cardContainer{
+  display: flex;
+  padding: 6rem;
+  height: 60%;
+  color: white;
+  gap: 4rem;
+}
+
+
+
+.cardImgContainer{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.cardImg{
+  max-width:100%;
+  flex: 1;
+}
+
+.buttonContainer{
+  justify-content: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.cardTextContainer{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cardTextContainer > #description{
+  font-size: 2vw;
+  text-align: justify;
+}
+
+.cardTextContainer a{
+  border: 1px solid;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Raleway';
+  font-size: 30px;
+  background: #e5e1da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cardTextContainer a:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #922d5000;
+  color: #e5e1da !important;
+}
+
+.F1Diff .cardTextContainer a{
+  color: #f28482;
+}
+
+.MKbug .cardTextContainer a{
+  color: #84a59d;
+}
+
+.TekNews .cardTextContainer a{
+  color: #922d50b8;
+}
+
+
+.chipContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.chipContainer > div{
+  border: 1px solid white;
+  padding: 13px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.scroll-container section .header{
+  display: block;
+  position: relative;
+  top: 10%;
+  font-size: 54px;
+  font-weight: 500;
+  color: white;
+}
+
+.landing {
+  background-color: #f6bd60;
+}
+
+.F1Diff { 
+  background-color: #f28482;
+}
+
+.MKbug {
+  background-color: #84a59d;
+}
+
+.TekNews { 
+  background-color: #922d50b8;
+}
+
+.footer {
+  background-color: #f5dabd;
+}
+
+section > div {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  top: 44%;
+  transform: translateY(-50%);
+}
+
+span {
+  font-size: 5rem;
+  font-style: normal;
+  color: #fff;
+}
+
+.button {
+  background-color: #f2cf66;
+  border-bottom: 5px solid #d1b358;
+  text-shadow: 0px -2px #d1b358;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+} 
+
+@keyframes slide-up-anim  {
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+} 
+
+/** Media querys */
+
+@media only screen and (max-width: 1200px) {
+  .cardContainer {
+    
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    top: 40%;
+    gap: 2rem;
+  }
+
+  .cardImgContainer{
+    width: 60%;
+  }
+
+  .cardTextContainer{
+    gap: 2rem;
+  }
+
+  .scroll-container section .header{
+    top: 6%;
+  }
+
+  .cardTextContainer > #description{
+    font-size: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+
+  .cardTextContainer{
+    justify-content: unset;
+  }
+
+  .landing{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  span{
+    
+    font-size: 40px;
+  }
+
+  .workButton{
+    font-size: 20px;
+  }
+
+  .cardTextContainer{
+    gap: 2rem;
+  }
+
+  .header{
+    font-size: 2rem !important;
+  }
+
+  .chipContainer{
+    flex-wrap: unset;
+    max-width: 100%;
+    margin: 0 10px 0px 10px;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  .chipContainer > div{
+    
+    white-space: nowrap;
+  }
+
+  .cardContainer{
+    
+    padding: 0 1rem 0 1rem;
+  }
+
+  .cardTextContainer #description{
+    
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .socials{
+    top: 3%;
+  }
+
+}
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miguel Iranzo</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/stylesheet/full-page-scroll.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <div class="socials">
+      <a class="socialLink" href="https://github.com/migueliranzo"><img src="imgs/github.png" width="50" height="50" alt=""> </a>
+      <a  class="socialLink" style="padding-left: 10px;" href="https://www.linkedin.com/in/miguel-iranzo-750b10110/"> <img src="imgs/linkedin.svg" width="30" height="50" alt=""> </a>
+      <a  class="socialLink socialCV" href="docs/Miguel_Iranzo__CV.pdf" download>CV</a>
+    </div>
+
+    <div id="main" class="scroll-container">
+
+      <section class="landing">
+        <div>
+          <span> Hey! Its  <p  class="highLight">Miguel Iranzo</p>.  <br> I build <p class="highLightBottom" >  cool stuff </p> for the web.</span>
+            <br><br>
+            <div  style="margin-top:5rem">
+              <a class="workButton" href="#1" >Check out my projects</a>
+            </div>
+        
+        </div>
+        <div>
+        </div>
+      </section>
+
+      <section class="F1Diff">
+        
+        <div class="header" >F1Diff</div>
+          <div class="cardContainer">
+            <div class="cardImgContainer">
+              <img class="cardImg" src="imgs/f1Diff.png">
+            </div>
+            
+            <div class="cardTextContainer">
+              <div id="description" >I'm a big Formula 1 fan and one of the things I even can't ignore is how long are the races!<br> That's why I decided to create a tool that would allow me to revisit any race in the past years in just a couple of seconds without feeling like I am just seeing the highlights, I wanted more than that, I wanted to get the full context of the race to actually feel how it happened. </div>
+              <div class="chipContainer"> <div>Angular</div> <div>Javascript</div> <div>PrimeNG</div> <div>Public API</div> <div>Tailwind CSS</div>  <div> Responsive</div>  </div>
+              <div class="buttonContainer" >
+                <a href="https://github.com/migueliranzo/F1Diff">Code</a>
+                <a href="https://migueliranzo.github.io/F1Diff/" >Demo</a>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="MKbug">
+            
+        <div class="header" >MKbug tracker</div>
+          <div class="cardContainer">
+            <div class="cardImgContainer">
+              <img class="cardImg" src="imgs/MkBugTracker.png">
+            </div>
+            
+            <div class="cardTextContainer">
+              <div id="description" >I've been using Azure for a while and have  always been curious about what it would be like to develop a similar application, so I took the challenge of creating a bug tracker. <br>
+                One of my objectives was to use reactive programming to provide a real-time experience and improve my RxJS knowledge, and using firebase firestore allowed me to achieve it.</div>
+              <div class="chipContainer"> <div>Angular</div> <div>Reactive programming</div> <div>Angular Material</div> <div>Firebase</div> <div>Tailwind CSS</div>  <div>Mobile Responsive</div>   </div>
+              <div class="buttonContainer" >
+                <a href="https://github.com/migueliranzo/F1Diff">Code</a>
+                <a href="https://mike-bugs.web.app/" >Demo</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="TekNews">
+            
+        <div class="header" >TekNews</div>
+          <div class="cardContainer">
+            <div class="cardImgContainer">
+              <img class="cardImg" src="imgs/teknews2.jpg">
+            </div>
+            
+            <div class="cardTextContainer">
+              <div id="description" >I love CSS, but sometimes it can be a pain to write it fast. I came across Tailwind while watching some videos about responsive development. It got my attention straight away. <br>
+                I decided to give it a shot in the next project I had in mind: a responsive tech news site with a markdown article editor so that editors can write and edit articles without leaving the site.</div>
+              <div class="chipContainer"> <div>Design</div>   <div>User experience</div> <div>Tailwind CSS</div> <div>Mobile Responsive</div>  <div>Javascript</div> <div>JQuery</div>   <div>HTML/CSS</div>   <div>PHP</div> <div>MySQL</div> </div>
+              <div class="buttonContainer" >
+                <a href="https://github.com/migueliranzo/TekNews">Code</a>
+                <a href="http://teknews.great-site.net/index.php" >Demo</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="footer">
+        <div>
+          <span> Like what you see? <br> Get in touch, lets build something especial.</span>
+        </div>
+      </section>
+    </div>
+    <script src="https://rawgit.com/almeida-matheus/fullPageScrollPureJS/master/app/assets/javascript/full-page-scroll.js"></script>
+    <script type="text/javascript">
+      new fullScroll({
+        mainElement: "main",
+        displayDots: true,
+        dotsPosition: "right",
+        animateTime: 0.7,
+        animateFunction: "ease",
+      });
+    </script>
+  </body>
+</html>
