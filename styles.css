@@ -87,13 +87,13 @@
   width: 100%;
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .cardTextContainer > #description{
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: justify;
 }
 
@@ -299,7 +299,7 @@ span {
 
   .cardTextContainer #description{
     
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 22px;
   }
 
